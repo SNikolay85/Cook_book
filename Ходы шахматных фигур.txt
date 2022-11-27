@@ -1,0 +1,53 @@
+Ход Ферзя:
+
+x1, y1, x2, y2 = int(input()), int(input()), int(input()), int(input())
+if (x1 == x2 and y1 != y2) or (x1 != x2 and y1 == y2) or abs(x1 - x2) == abs(y1 - y2):
+    print('YES')
+else:
+    print('NO')
+
+Ход коня:
+
+x1, y1, x2, y2 = int(input()), int(input()), int(input()), int(input())
+if (((x1 - x2) * (y1 - y2)) == 2) or (((x1 - x2) * (y1 - y2)) == -2):
+    print('YES')
+else:
+    print('NO')
+
+или
+
+x1, y1, x2, y2 = int(input()), int(input()), int(input()), int(input())
+if abs(x1 - x2) == abs(y1 - y2):
+    print('YES')
+else:
+    print('NO')
+
+Ход слона:
+
+x1, y1, x2, y2 = int(input()), int(input()), int(input()), int(input())# put your py
+if ((x1 - y1) == (x2 - y2)) or ((x1 + y1) == (x2 + y2)):
+    print('YES')
+else:
+    print('NO')
+
+Ход короля:
+
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+if (a - 1 <= c <= a + 1) and (b - 1 <= d <= b + 1):
+    print('YES')
+else:
+    print('NO')
+
+Ход ладьи:
+
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+if (a != c and b == d) or (b != d and a == c):
+    print('YES')
+else:
+    print('NO')
